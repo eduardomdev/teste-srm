@@ -1,0 +1,118 @@
+{
+  "emprestimos": [
+    {
+      "valorParcelas": 1500,
+      "numeroParcelas": 10,
+      "valorTotal": 150,
+      "id": 1
+    },
+    {
+      "valorParcelas": 200,
+      "numeroParcelas": 20,
+      "valorTotal": 10,
+      "id": 2
+    },
+    {
+      "valorParcelas": 43000.00000000001,
+      "numeroParcelas": 23,
+      "valorTotal": 1869.5652173913047,
+      "id": 3
+    },
+    {
+      "valorParcelas": 2.3,
+      "numeroParcelas": 3,
+      "valorTotal": 0.7666666666666666,
+      "id": 4
+    },
+    {
+      "valorParcelas": 4.8,
+      "numeroParcelas": 4,
+      "valorTotal": 1.2,
+      "id": 5
+    },
+    {
+      "valorParcelas": 1.05,
+      "numeroParcelas": 1,
+      "valorTotal": 1.05,
+      "id": 6
+    },
+    {
+      "valorParcelas": 4.6,
+      "numeroParcelas": 3,
+      "valorTotal": 1.5333333333333332,
+      "id": 7
+    },
+    {
+      "valorParcelas": 1.1,
+      "numeroParcelas": 2,
+      "valorTotal": 0.55,
+      "id": 8
+    },
+    {
+      "valorParcelas": 1600,
+      "numeroParcelas": 12,
+      "valorTotal": 133.33333333333334,
+      "id": 9
+    },
+    {
+      "valorParcelas": 2.3,
+      "numeroParcelas": 3,
+      "valorTotal": 0.7666666666666666,
+      "id": 10
+    },
+    {
+      "valorParcelas": 3.1500000000000004,
+      "numeroParcelas": 1,
+      "valorTotal": 3.1500000000000004,
+      "id": 11
+    },
+    {
+      "valorParcelas": 1.15,
+      "numeroParcelas": 3,
+      "valorTotal": 0.3833333333333333,
+      "id": 12
+    },
+    {
+      "valorParcelas": 1.05,
+      "numeroParcelas": 1,
+      "valorTotal": 1.05,
+      "id": 13
+    },
+    {
+      "valorParcelas": 2.1,
+      "numeroParcelas": 1,
+      "valorTotal": 2.1,
+      "id": 14
+    },
+    {
+      "valorParcelas": 2.1,
+      "numeroParcelas": 1,
+      "valorTotal": 2.1,
+      "id": 15
+    },
+    {
+      "valorParcelas": 2.1,
+      "numeroParcelas": 1,
+      "valorTotal": 2.1,
+      "id": 16
+    },
+    {
+      "valorParcelas": 2.1,
+      "numeroParcelas": 1,
+      "valorTotal": 2.1,
+      "id": 17
+    },
+    {
+      "valorParcelas": 2.3,
+      "numeroParcelas": 3,
+      "valorTotal": 0.7666666666666666,
+      "id": 18
+    },
+    {
+      "valorParcelas": 3.5999999999999996,
+      "numeroParcelas": 4,
+      "valorTotal": 0.8999999999999999,
+      "id": 19
+    }
+  ]
+}

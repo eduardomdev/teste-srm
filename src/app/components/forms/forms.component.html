@@ -1,0 +1,63 @@
+<section class="container campo-form ff-inter">
+    <div class="form-title">
+        <h3>Formulário de Solicitação de Empréstimo</h3>
+    </div>
+    <form [formGroup]="meuForms" action="">
+        <label for="name">Nome do Solicitante:</label>
+        <input
+            id="name" 
+            type="text"
+            name="name"
+            placeholder="Digite um nome"
+            [(ngModel)]="solicitaEmprestimo.nome"
+            formControlName="name" required
+        >
+
+        <label for="valor">Valor Desejado:</label>
+        <input 
+            id="valor" 
+            type="number"
+            name="valor"
+            placeholder="Digite o valor desejado"
+            [(ngModel)]="solicitaEmprestimo.valorSolicitado"
+            formControlName="valor" required
+            >
+        
+        <label for="parcelas">Número de Parcelas:</label>
+        <input 
+            id="parcelas" 
+            type="number"
+            name="parcelas"
+            placeholder="Digite o numero de parcelas"
+            [(ngModel)]="solicitaEmprestimo.nParcelas"
+            formControlName="parcelas" required
+        >
+    </form>
+
+    <div class="confirm-emprestimo" *ngIf="arrayEmprestimoList.length > 0 == true" >
+        <p>Nome do Solicitante: {{ arrayEmprestimoList[0].nome}}</p>
+        <p>Valor Parcelas: {{ arrayEmprestimoList[0].valorParcelas}}</p>
+        <p>Numero de Parcelas: {{ arrayEmprestimoList[0].numeroParcelas}}</p>
+        <p>Valor Total com Juros: {{ arrayEmprestimoList[0].valorTotalJuros}}</p>
+    </div>
+    <div class="form-button-container">
+        <button (click)="criaEmprestimo()" class="form-button">Simular Emprestimo</button>
+        <button (click)="confirmaModal()"  class="form-button">Confirmar</button>
+    </div>
+
+    <div *ngIf="showModal == true" class="container excluir-pensamentos ff-inter">
+        <div class="modal">
+          <h5>Simulação de Emprestimo <br/> Confirma a contratação?</h5>
+          <p>Nome do Solicitante: {{ arrayEmprestimoList[0].nome}}</p>
+          <p>Valor Parcelas: {{ arrayEmprestimoList[0].valorParcelas}}</p>
+          <p>Numero de Parcelas: {{ arrayEmprestimoList[0].numeroParcelas}}</p>
+          <p>Valor Total com Juros: {{ arrayEmprestimoList[0].valorTotalJuros}}</p>
+          <div class="acoes">
+            <button routerLink="/contratos" (click)="confirmaEmprestimo()" class="form-button">Confirmar</button>
+            <button (click)="cancelaModal()" class="form-button" >Cancelar</button>
+          </div>
+        </div>
+        <div class="overlay"></div>
+    </div>
+
+</section>

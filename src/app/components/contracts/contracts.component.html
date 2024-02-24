@@ -1,0 +1,13 @@
+<section class="contracts-section ff-inter">
+    <div class="page-title">
+        <h2>O empréstimo foi realizado com sucesso! Veja abaixo o que você contratou</h2>
+    </div>
+    <div class="show-contract">
+        <p>Valor das Parcelas: {{ successList[0].valorParcelas}} R$</p>
+        <p>Numero de Parcelas: {{ successList[0].numeroParcelas}}</p>
+        <p>Valor Total Contratado com Juros: {{ successList[0].valorTotal}} R$</p>
+    </div>
+    <button routerLink="/">
+        Visualizar Contratos
+    </button>
+</section>
