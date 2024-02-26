@@ -16,9 +16,9 @@ Execute `ng serve` para acessar o servidor de desenvolvimento e navegue até `ht
 
 Foram adicionadas as funcionalidades de:
 
-*Selecionar a modalidade de juros entre `juros fixos sobre o valor solicitado` ou `juros por parcelas contradas`.*
+*1. Selecionar a modalidade de juros entre `juros fixos sobre o valor solicitado` ou `juros por parcelas contradas`.*
 
-*Atribuir a `taxa de juros` a ser utilizada.*
+*2. Atribuir a `taxa de juros` a ser utilizada.*
 
 Devido a não ter compreendido com certeza se a funcionalidade solicitada neste trecho `Para o campo de juros considere como 5% do valor solicitado` se referia a `juros fixos sobre o valor solicitado` ou `juros por parcelas contradas`, foram desenvolvidas ambas funcionalidades.
 
