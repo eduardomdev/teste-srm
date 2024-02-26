@@ -94,12 +94,6 @@ mat-radio-button {
   color: rgb(32, 47, 83);
 }
 
-form p {
-  font-size: 10px;
-  color: red;
-}
-
-
 @media screen and (max-width: 548px) {
   .campo-form {
     border-radius: 15px;
