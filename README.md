@@ -1,4 +1,4 @@
-# Teste Tecnico SRM
+# Teste Técnico SRM
 
 Este projeto foi gerado com [Angular CLI](https://github.com/angular/angular-cli) versão 9.1.13.
 
