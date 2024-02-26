@@ -1,0 +1,79 @@
+.modal{
+    width: 25rem;
+    height: 15rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: rgb(32, 47, 83);
+  }
+  
+  .modal p{
+    margin-top: 13px;
+  }
+  
+  .modal h4{
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  
+  .modal h3{
+    font-size: 21px;
+  }
+
+  .button-container{
+    margin-top: 15px;
+  }
+
+  button {
+    margin: 10px 10px;
+    letter-spacing: 0.5px;
+    border: none;
+    width: 130px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: rgb(51, 73, 126);
+    color: rgb(240, 240, 240);
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: rgb(73, 95, 145);
+    transition: 0.2s;
+  }
+  
+  button:active {
+    background-color: rgb(55, 70, 109);
+    transition: 0.2s;
+  }
+
+  @media screen and (max-width: 768px) {
+    .modal{
+      width: 17rem;
+      height: 13rem;
+      justify-content: start;
+    }
+
+    .modal p{
+      margin-top: 8px;
+    }
+    
+    .modal h4{
+      font-size: 18px;
+      margin-bottom: 8px;
+    }
+    
+    .modal h3{
+      font-size: 21px;
+    }
+  
+    .button-container{
+      margin-top: 10px;
+    }
+
+    button {
+      width: 90px;
+      height: 20px;
+    }
+  }
+

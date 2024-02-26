@@ -2,6 +2,13 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 70vh;
-    background-color: rgb(228, 228, 228);
+    min-height: 80vh;
+
+  }
+
+   @media screen and (min-width: 768px) {
+
+    main{
+      min-height: 91vh;
+    }
   }
