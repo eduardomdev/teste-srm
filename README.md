@@ -8,7 +8,7 @@ Este projeto utiliza a Versão v14.17.6 do [NodeJS].(https://nodejs.org/en)
 
 Rode `npm install` para instalar os arquivos do "node_modules".
 
-Ao acessar o projeto acesse a pasta "backend" com `cd backend` no terminal e rode o nosso 'back-end' do JSON-Server na --port 3000 com `npm start`. Para validar Navegue até http://localhost:3000.
+Ao acessar o projeto acesse a pasta "backend" com `cd backend` no terminal e rode o 'back-end' do JSON-Server na --port 3000 com `npm start`. Para validar Navegue até http://localhost:3000.
 
 Execute `ng serve` para acessar o servidor de desenvolvimento e navegue até `http://localhost:4200/`.
 
