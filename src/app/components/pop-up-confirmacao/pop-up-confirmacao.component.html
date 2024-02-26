@@ -1,0 +1,17 @@
+<div *ngIf="error; else confirmarEmprestimo">
+    <button (click)="cancelar()">Cancela</button>
+</div>
+<ng-template #confirmarEmprestimo>
+    <div class="modal ff-inter">
+          <h3>Simulação de Emprestimo </h3> 
+          <h4>Confirma a contratação?</h4>
+          <p>Nome do Solicitante: {{ this.data.nome}}</p>
+          <p>Valor Parcelas: {{ this.data.valorParcelas | currency}}</p>
+          <p>Numero de Parcelas: {{ this.data.numeroParcelas}}</p>
+          <p>Valor Total com Juros: {{ this.data.valorTotal | currency}}</p>
+          <div class="button-container">
+            <button [disabled]="loading" (click)="confirmar()">Confirma</button>
+            <button [disabled]="loading" (click)="cancelar()">Cancela</button>
+          </div>
+    </div>
+</ng-template>

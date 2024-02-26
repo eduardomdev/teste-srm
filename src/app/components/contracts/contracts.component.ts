@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Emprestimos } from '../forms/emprestimos';
 import { EmprestimosService } from '../forms/emprestimos.service';
+import { ActivatedRoute } from '@angular/router';
+import { take } from 'rxjs/operators';
 
 @Component({
   selector: 'app-contracts',
@@ -9,27 +11,23 @@ import { EmprestimosService } from '../forms/emprestimos.service';
 })
 export class ContractsComponent implements OnInit {
 
-  successList: Emprestimos[] = []
-
-  constructor(private service: EmprestimosService) { }
-
-  emprestimosList: Emprestimos[] = []
-
-  testeGet(): void{
-    console.log(this.emprestimosList)
-  }
-
-  obterUltimoItem(): Emprestimos | undefined {
-    return this.emprestimosList.length > 0 ? this.emprestimosList[this.emprestimosList.length - 1] : undefined;
-  }
+  constructor(private service: EmprestimosService, private activatedRoute: ActivatedRoute) {}
+   
+  emprestimoSucesso?: Emprestimos
 
   ngOnInit(): void {
-    this.service.getEmprestimos().subscribe((emprestimosList) => {
-      this.emprestimosList = emprestimosList
-      const ultimoItem = this.obterUltimoItem();
-      this.successList.push(ultimoItem)
+    this.getEmprestimo()
+  }
 
-    })
+  getEmprestimo(): void {
+
+    const idEmprestimo = this.activatedRoute.snapshot.params['id']
+
+    if (idEmprestimo) {
+      this.service.getEmprestimo(idEmprestimo).pipe(take(1)).subscribe({
+        next: (res) => { this.emprestimoSucesso = res },
+      })
+    }
   }
 
 }

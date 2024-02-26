@@ -1,6 +1,109 @@
-.campo-form{
-    border-radius: 20px;
-    width: 35rem;
+.campo-form {
+  border-radius: 15px;
+  width: 35rem;
+  min-height: 20rem;
+  background-color: rgb(241, 241, 241);
+  box-shadow: 2px 2px 8px rgb(156, 156, 156);
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 0rem;
+}
+
+h3 {
+  color: rgb(32, 47, 83);
+}
+
+.form-title {
+  font-size: 16px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px 0px;
+}
+
+form {
+  color: rgb(32, 47, 83);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+label {
+  margin: 20px 0px 5px 0px;
+}
+
+.example-full-width {
+  width: 50%;
+}
+
+.form-button-container {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-button {
+  margin: 10px 10px;
+  letter-spacing: 0.5px;
+  border: none;
+  width: 150px;
+  height: 40px;
+  border-radius: 10px;
+  background-color: rgb(51, 73, 126);
+  color: rgb(240, 240, 240);
+  cursor: pointer;
+}
+
+.form-button:hover {
+  background-color: rgb(73, 95, 145);
+  transition: 0.2s;
+}
+
+.form-button:active {
+  background-color: rgb(55, 70, 109);
+  transition: 0.2s;
+}
+
+.form-button:disabled {
+  background-color: rgb(131, 131, 131);
+  cursor: default;
+}
+
+mat-radio-group {
+  margin-top: 15px;
+}
+
+mat-radio-button {
+  margin: 0px 20px;
+}
+
+.confirm-emprestimo {
+  margin: 30px 0px 10px 0px;
+  background-color: rgb(241, 241, 241);
+  box-shadow: 2px 2px 8px rgb(156, 156, 156);
+  border-radius: 10px;
+}
+
+.confirm-emprestimo p {
+  font-size: 16px;
+  margin: 13px 0px 13px 13px;
+  color: rgb(32, 47, 83);
+}
+
+form p {
+  font-size: 10px;
+  color: red;
+}
+
+
+@media screen and (max-width: 548px) {
+  .campo-form {
+    border-radius: 15px;
+    width: 15rem;
     min-height: 20rem;
     background-color: rgb(241, 241, 241);
     box-shadow: 2px 2px 8px rgb(156, 156, 156);
@@ -9,139 +112,16 @@
     margin: 2rem 0rem;
   }
 
-  h3{
-    color: rgb(32, 47, 83);
-  }
-
-.form-title{
-    font-size: 16px;
+  form{
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
-form{
-    color: rgb(32, 47, 83);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-input{
-    outline: none;
-    padding: 10px;
-    width: 17rem;
-    margin: 5px 0px 15px 0px;
-    border: none;
-    border-radius: 10px;
-    box-shadow: 2px 2px 8px rgb(218, 218, 218);
-}
-
-.form-button-container{
-    margin-top: 20px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.form-button{
-    margin: 0px 10px;
-    letter-spacing: 0.5px;
-    border: none;
-    width: 170px;
-    height: 40px;
-    border-radius: 20px;
-    background-color: rgb(51, 73, 126);
-    color: rgb(240, 240, 240);
-    cursor: pointer;
-}
-
-.form-button:hover{
-    background-color: rgb(73, 95, 145);
-    transition: 0.2s    ;
-}
-
-.form-button:active{
-    background-color: rgb(55, 70, 109);
-    transition: 0.2s    ;
-}
-
-
-.confirm-emprestimo{
-    margin: 15px 0px 15px 25px;
-}
-
-.confirm-emprestimo p{
-    font-size: 14px;
-    margin-bottom: 10px;
-    color: rgb(32, 47, 83);
-}
-
-
-
-.modal {
-
-    background: #fff;
-    border-radius: 20px;
-    box-shadow: 2px 2px 8px rgb(62, 79, 119);
-    min-width: 360px;
-    min-height: 150px;
-    position: fixed;
-    left: 50%;
-    padding: 24px;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 11;
-    font-size: 1.5rem;
-    text-align: center;
-    padding-top: 50px;
+    justify-content: start;
   }
 
-  h5{
-    color: rgb(32, 47, 83);
-  }
-
-  .modal p{
-    color: rgb(32, 47, 83);
-    margin-top: 20px;
-    font-size: 17px;
+  mat-form-field{
+    width: 150px;
   }
   
-  .overlay {
-    background: #000;
-    height: 100vh;
-    left: 0;
-    opacity: 0.5;
-    position: fixed;
-    top: 0;
-    width: 100vw;
-    z-index: 10;
-  }
-  
-  .acoes {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    margin-top: 30px;
-  }
-  
-  .botao {
-    margin: 5px;
-    margin-top: 70px;
-    width: 200px;
-  }
-  
-  
-  @media screen and (max-width: 548px) {
-    .modal {
-      width: 90%;
-      min-width: 90%;
-      padding: 50px 12px 24px;
-      font-size: 1.2rem;
-    }
-  }
+
+
+}
+
