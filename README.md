@@ -1,6 +1,7 @@
 # Teste Tecnico SRM
 
 Este projeto foi gerado com [Angular CLI](https://github.com/angular/angular-cli) versão 9.1.13.
+
 Este projeto utiliza a Versão v14.17.6 do [NodeJS].(https://nodejs.org/en)
 
 ## Como utilizar:
@@ -16,6 +17,7 @@ Execute `ng serve` para acessar o servidor de desenvolvimento e navegue até `ht
 Foram adicionadas as funcionalidades de:
 
 *Selecionar a modalidade de juros entre `juros fixos sobre o valor solicitado` ou `juros por parcelas contradas`.*
+
 *Atribuir a `taxa de juros` a ser utilizada.*
 
 Devido a não ter compreendido com certeza se a funcionalidade solicitada neste trecho `Para o campo de juros considere como 5% do valor solicitado` se referia a `juros fixos sobre o valor solicitado` ou `juros por parcelas contradas`, foram desenvolvidas ambas funcionalidades.
