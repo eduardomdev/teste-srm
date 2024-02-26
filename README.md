@@ -20,7 +20,7 @@ Foram adicionadas as funcionalidades de:
 
 *2. Atribuir a `taxa de juros` a ser utilizada.*
 
-Devido a não ter compreendido com certeza se a funcionalidade solicitada neste trecho `"Para o campo de juros considere como 5% do valor solicitado"` se referia a `juros fixos sobre o valor solicitado` ou `juros por parcelas contradas`, foram desenvolvidas ambas funcionalidades.
+Devido a duvida de se a funcionalidade solicitada neste trecho do case `"Para o campo de juros considere como 5% do valor solicitado"` se referia a `juros fixos sobre o valor solicitado` ou `juros por parcelas contradas`, foram desenvolvidas ambas funcionalidades.
 
 Conforme solicitado em `"Para o campo de juros considere como 5% do valor solicitado"`, a taxa de juros foi pré-definida como 5% mas para adicionar mais recursos aos calculos, entendi que seria interessante a possibilidade de poder selecionar diferentes taxas de juros, portanto esta funcionalidade também foi desenvolvida.
 
