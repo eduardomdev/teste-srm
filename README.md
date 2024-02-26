@@ -1,27 +1,29 @@
-# SrmTest
+# Teste Tecnico SRM
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.13.
+Este projeto foi gerado com [Angular CLI](https://github.com/angular/angular-cli) versão 9.1.13.
+Este projeto utiliza a Versão v14.17.6 do [NodeJS].(https://nodejs.org/en)
 
-## Development server
+## Como utilizar:
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Rode `npm install` para instalar os arquivos do "node_modules".
 
-## Code scaffolding
+Ao acessar o projeto acesse a pasta "backend" com `cd backend` no terminal e rode o nosso 'back-end' do JSON-Server na --port 3000 com `npm start`. Para validar Navegue até http://localhost:3000.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Execute `ng serve` para acessar o servidor de desenvolvimento e navegue até `http://localhost:4200/`.
 
-## Build
+## Alterações no projeto:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Foram adicionadas as funcionalidades de:
 
-## Running unit tests
+*Selecionar a modalidade de juros entre `juros fixos sobre o valor solicitado` ou `juros por parcelas contradas`.*
+*Atribuir a `taxa de juros` a ser utilizada.*
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Devido a não ter compreendido com certeza se a funcionalidade solicitada neste trecho `Para o campo de juros considere como 5% do valor solicitado` se referia a `juros fixos sobre o valor solicitado` ou `juros por parcelas contradas`, foram desenvolvidas ambas funcionalidades.
 
-## Running end-to-end tests
+Conforme solicitado em `Para o campo de juros considere como 5% do valor solicitado`, a taxa de juros foi pré-definida como 5% mas para adicionar mais recursos aos calculos, entendi que seria interessante a possibilidade de poder selecionar diferentes taxas de juros, portanto esta funcionalidade também foi desenvolvida.
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
-## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+
+
